@@ -1,0 +1,27 @@
+{
+  "name": "bowling-game-kata",
+  "version": "0.0.1",
+  "description": "The Bowling Game Kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/PandaWhisperer/BowlingGameKata.git"
+  },
+  "keywords": [
+    "bowling",
+    "game",
+    "kata"
+  ],
+  "author": "Christoph Wagner <github@christophwagner.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PandaWhisperer/BowlingGameKata/issues"
+  },
+  "homepage": "https://github.com/PandaWhisperer/BowlingGameKata#readme",
+  "engines" : {
+    "node" : ">=6.2.0"
+  }
+}
