@@ -22,4 +22,12 @@ describe('Bowling Game', function() {
     expect(this.game.score()).to.eq(20)
   })
 
+  it("scores a game with one spare", function() {
+    this.game.roll(5)
+    this.game.roll(5)
+    this.game.roll(3)
+    rollMany.call(this, 17, 0)
+    expect(this.game.score()).to.eq(16)
+  })
+
 })
