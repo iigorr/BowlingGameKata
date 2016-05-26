@@ -24,7 +24,7 @@ describe('Bowling Game', function() {
   })
 
   it("scores a game with one strike", function() {
-    this.game.roll(10) // strike
+    rollStrike.call(this)
     this.game.roll(3)
     this.game.roll(4)
     rollMany.call(this, 16, 0)
@@ -37,6 +37,10 @@ function rollMany(n, pins) {
   for (let i=0; i < n; i++) {
     this.game.roll(pins)
   }
+}
+
+function rollStrike() {
+  this.game.roll(10)
 }
 
 function rollSpare() {
