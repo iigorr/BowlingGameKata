@@ -13,4 +13,14 @@ describe('Bowling Game', function() {
     expect(game.score()).to.eq(0)
   })
 
+  it("scores a game of all ones", () => {
+    let game = new Game()
+
+    for (let i=0; i < 20; i++) {
+      game.roll(1)
+    }
+
+    expect(game.score()).to.eq(20)
+  })
+
 })
