@@ -31,6 +31,11 @@ describe('Bowling Game', function() {
     expect(this.game.score()).to.eq(24)
   })
 
+  it("scores a perfect game", function() {
+    rollMany.call(this, 12, 10)
+    expect(this.game.score()).to.eq(300)
+  })
+
 })
 
 function rollMany(n, pins) {
