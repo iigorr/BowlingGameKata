@@ -23,6 +23,14 @@ describe('Bowling Game', function() {
     expect(this.game.score()).to.eq(16)
   })
 
+  it("scores a game with one strike", function() {
+    this.game.roll(10) // strike
+    this.game.roll(3)
+    this.game.roll(4)
+    rollMany.call(this, 16, 0)
+    expect(this.game.score()).to.eq(24)
+  })
+
 })
 
 function rollMany(n, pins) {
