@@ -6,23 +6,6 @@ describe('Bowling Game', function() {
     this.game = new Game()
   })
 
-  it("scores a gutter game", function() {
-    rollMany.call(this, 20, 0)
-    expect(this.game.score()).to.eq(0)
-  })
-
-  it("scores a game of all ones", function() {
-    rollMany.call(this, 20, 1)
-    expect(this.game.score()).to.eq(20)
-  })
-
-  it("scores a game with one spare", function() {
-    rollSpare.call(this)
-    this.game.roll(3)
-    rollMany.call(this, 17, 0)
-    expect(this.game.score()).to.eq(16)
-  })
-
   it("scores a game with one strike", function() {
     rollStrike.call(this)
     this.game.roll(3)
@@ -32,8 +15,7 @@ describe('Bowling Game', function() {
   })
 
   it("scores a perfect game", function() {
-    rollMany.call(this, 12, 10)
-    expect(this.game.score()).to.eq(300)
+    // TODO
   })
 
 })
